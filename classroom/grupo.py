@@ -23,6 +23,10 @@ class Grupo:
             self.listadoAlumnos = self.listadoAlumnos + lista
         else:
             self.listadoAlumnos = [alumno]
+            
+    def __str__(self):
+        if(self.grupo == "grupo ordinario"):
+            return "Grupo de estudiantes: grupo predeterminado"
 
     @ classmethod
     def asignarNombre(cls, nombre="Grado 10"):
